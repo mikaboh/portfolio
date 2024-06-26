@@ -1,3 +1,4 @@
+import Education from "./sections/education/Education";
 import Hero from "./sections/hero/Hero";
 import Skills from "./sections/skills/Skills";
 
@@ -9,6 +10,8 @@ export default function Portfolio() {
       <Hero />
 
       <Skills />
+
+      <Education />
     </main>
   );
 }

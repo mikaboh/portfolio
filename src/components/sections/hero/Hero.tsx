@@ -8,7 +8,7 @@ function Hero() {
             <div className="flex flex-col gap-5 max-w-2xl">
                 {/* HeroHeader */}
                 <div className="flex flex-col gap-3">
-                    <HeadlineLeftAligned text="my name is" />
+                    <HeadlineLeftAligned category="my name is" />
 
                     {/* Name/DateOfBirth */}
                     <div className="flex flex-col gap-3">
