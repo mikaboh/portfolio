@@ -1,3 +1,5 @@
+/* TODO: fix image streched */
+
 function HeroImage() {
     return (
         <div className="relative z-0 flex items-center justify-center px-7 py-5" >
