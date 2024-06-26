@@ -15,7 +15,7 @@ const educationData: CVItemInterface[] = [
             "Thesis: “Instance Segmentation of Roads and Lanes in Drone-Based Aerial Images Using YOLOv8 and Segment Anything”",
             "Ø 2.1",
         ],
-        date: "since 03/2024",
+        date: "10/2019 - 02/2024",
         subitems: [
             {
                 title: "Hochschule Esslingen, Esslingen",
