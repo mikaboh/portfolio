@@ -1,8 +1,6 @@
 function TechnologyTag({ text }: TechnologyTagProps) {
     return (
-        <div className="text-textOnLightLighter border-2 px-2 py-1 text-xs rounded">
-            <span>{text}</span>
-        </div>
+        <span className="text-xs whitespace-nowrap text-textOnLightLighter border-2 px-2 py-1 rounded-md border-borderColorOnLight h-7">{text}</span>
     );
 }
 

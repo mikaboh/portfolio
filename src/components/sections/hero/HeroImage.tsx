@@ -20,7 +20,7 @@ function HeroImage() {
                         <clipPath id="clip0_42_18">
                             <rect x="0.79425" y="0.157227" width="281.336" height="334.924" rx="13.397" fill="white" />
                         </clipPath>
-                        <image id="image0_42_18" width="2362" height="3543" xlinkHref="/assets/front.png" />
+                        <image id="image0_42_18" width="2362" height="3543" xlinkHref="/cv-photo.png" />
                     </defs>
                 </svg>
 

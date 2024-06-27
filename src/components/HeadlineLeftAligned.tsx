@@ -15,7 +15,7 @@ function HeadlineLeftAligned({ category, title, theme }: HeadlineLeftAlignedProp
     return (
         <div className="flex flex-col gap-3">
             <div className="flex flex-row gap-4 items-center">
-                <div className={`h-[1.7px] w-3.5 ${bgColor}`}></div>
+                <div className={`h-[2px] w-3.5 ${bgColor}`}></div>
 
                 <span className="uppercase font-medium text-neutral-500 text-xs tracking-[6px]">{category}</span>
             </div>
