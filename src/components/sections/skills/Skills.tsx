@@ -19,6 +19,8 @@ import SvelteIcon from "../../assets/SvelteIcon";
 import FirebaseIcon from "../../assets/FirebaseIcon";
 import GoogleCloudIcon from "../../assets/GoogleCloudIcon";
 import MySqlIcon from "../../assets/MySqlIcon";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const skills = [
     {
@@ -100,13 +102,15 @@ const skills = [
 ];
 
 function Skills() {
+    const skillDragConstraintsRef = useRef(null);
+
     return (
         <section className="px-96 py-36">
             <HeadlineCentered category="skills" title="Specialized in" />
 
-            <div className="flex flex-row gap-x-20 gap-y-24 justify-center flex-wrap">
+            <div className="flex flex-row gap-x-20 gap-y-24 justify-center flex-wrap" ref={skillDragConstraintsRef}>
                 {skills.map((skill) => (
-                    <Skill key={skill.name} name={skill.name} icon={skill.icon} />
+                    <Skill key={skill.name} name={skill.name} icon={skill.icon} constraintsRef={skillDragConstraintsRef} />
                 ))}
             </div>
         </section>
