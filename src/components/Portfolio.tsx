@@ -1,4 +1,5 @@
 import Education from "./sections/education/Education";
+import Footer from "./sections/footer/Footer";
 import Hero from "./sections/hero/Hero";
 import Projects from "./sections/projects/Projects";
 import Skills from "./sections/skills/Skills";
@@ -15,6 +16,8 @@ export default function Portfolio() {
       <Education />
 
       <Projects />
+
+      <Footer />
     </main>
   );
 }
