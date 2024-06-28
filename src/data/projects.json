@@ -15,14 +15,47 @@
             "Mobile application developed in Flutter and Dart for easy access to vaccination history and schedules.",
             "Node.js and Express server layer for efficient communication between the mobile app and the blockchain."
         ],
+        "mockupScreenSpacing": "-space-x-5",
         "mockupScreens": [
             {
                 "image": "vaccination-card/vaccination_card.png",
-                "width": "150",
+                "width": 150,
+                "posY": "-15",
                 "shadowX": "50",
                 "shadowY": "25",
                 "shadowBlur": "120",
-                "angle": "-7"
+                "angle": "-7",
+                "borderRadius": "12"
+            },
+            {
+                "image": "vaccination-card/calendar.png",
+                "width": 150,
+                "posY": "5",
+                "shadowX": "12",
+                "shadowY": "7",
+                "shadowBlur": "120",
+                "angle": "5",
+                "borderRadius": "12"
+            },
+            {
+                "image": "vaccination-card/vaccines.png",
+                "width": 150,
+                "posY": "-5",
+                "shadowX": "50",
+                "shadowY": "25",
+                "shadowBlur": "120",
+                "angle": "0",
+                "borderRadius": "12"
+            },
+            {
+                "image": "vaccination-card/vaccine.png",
+                "width": 150,
+                "posY": "15",
+                "shadowX": "12",
+                "shadowY": "7",
+                "shadowBlur": "120",
+                "angle": "10",
+                "borderRadius": "12"
             }
         ]
     },
@@ -40,6 +73,39 @@
             "Ein Tagebuch-Feature zur Speicherung und Überprüfung vorheriger Berechnungen und Insulindosen.",
             "Optionen zum Wechseln zwischen verschiedenen Einheiten für die Messung von Kohlenhydraten und Blutzucker.",
             "Verfügt über einen Dunkelmodus."
+        ],
+        "mockupScreenSpacing": "-space-x-1",
+        "mockupScreens": [
+            {
+                "image": "glucos/calculator.png",
+                "width": 150,
+                "posY": "-4",
+                "shadowX": "50",
+                "shadowY": "17",
+                "shadowBlur": "84",
+                "angle": "-8",
+                "borderRadius": "12"
+            },
+            {
+                "image": "glucos/diary.png",
+                "width": 150,
+                "posY": "20",
+                "shadowX": "8",
+                "shadowY": "5",
+                "shadowBlur": "84",
+                "angle": "0",
+                "borderRadius": "12"
+            },
+            {
+                "image": "glucos/settings.png",
+                "width": 150,
+                "posY": "-16",
+                "shadowX": "8",
+                "shadowY": "5",
+                "shadowBlur": "84",
+                "angle": "8",
+                "borderRadius": "12"
+            }
         ]
     },
     {
@@ -60,6 +126,18 @@
             "Hebt jedes Wort auf einer Webseite in einer von drei Farben hervor: Rot für unbekanntes Vokabular, Gelb für bereits bekanntes Vokabular und Grün für Vokabular, das der Benutzer bereits kennt.",
             "Hilft Nutzern, neue deutsche Wörter und deren Verwendung im Kontext zu lernen.",
             "Integriert Google Cloud NLP für die syntaktische Analyse, Microsoft Azure Translate für Übersetzungen und eine Wörterbuch-API für Definitionen."
+        ],
+        "mockupScreens": [
+            {
+                "image": "lexi-lens/word-view.png",
+                "width": 600,
+                "posY": "0",
+                "shadowX": "7",
+                "shadowY": "3",
+                "shadowBlur": "12",
+                "angle": "0",
+                "borderRadius": "7"
+            }
         ]
     }
 ]

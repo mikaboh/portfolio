@@ -1,8 +1,10 @@
 interface MockupScreen {
     image: string;
-    width: string;
+    width: number;
+    posY: string;
     shadowX: string;
     shadowY: string;
     shadowBlur: string;
     angle: string;
+    borderRadius: string;
 }
