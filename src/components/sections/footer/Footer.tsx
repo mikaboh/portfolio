@@ -9,9 +9,13 @@ function Footer() {
             <div className="flex flex-col gap-5 items-center">
                 {/* Socials */}
                 <div className="flex flex-row gap-8 text-xl">
-                    <FontAwesomeIcon icon={faGithub} />
+                    <a href="https://github.com/mikaboh" target="_blank">
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
 
-                    <FontAwesomeIcon icon={faLinkedinIn} />
+                    <a href="https://www.linkedin.com/in/mika-boehm/" target="_blank">
+                        <FontAwesomeIcon icon={faLinkedinIn} />
+                    </a>
                 </div>
 
                 {/* Contact */}

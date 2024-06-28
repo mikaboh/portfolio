@@ -1,3 +1,5 @@
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HeadlineLeftAligned from "../../HeadlineLeftAligned";
 import HeroImage from "./HeroImage";
 
@@ -28,7 +30,15 @@ function Hero() {
                 </p>
 
                 {/* Socials */}
+                <div className="flex flex-row gap-8 text-xl text-opacity-70 text-textOnDark">
+                    <a href="https://github.com/mikaboh" target="_blank">
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
 
+                    <a href="https://www.linkedin.com/in/mika-boehm/" target="_blank">
+                        <FontAwesomeIcon icon={faLinkedinIn} />
+                    </a>
+                </div>
             </div>
 
             {/* HeroImage */}
