@@ -18,7 +18,7 @@
         "mockupScreenSpacing": "-space-x-5",
         "mockupScreens": [
             {
-                "image": "vaccination-card/vaccination_card.png",
+                "image": "vaccination-card/vac_pass.png",
                 "width": 150,
                 "posY": "-15",
                 "shadowX": "50",
@@ -38,7 +38,7 @@
                 "borderRadius": "12"
             },
             {
-                "image": "vaccination-card/vaccines.png",
+                "image": "vaccination-card/vac_list.png",
                 "width": 150,
                 "posY": "-5",
                 "shadowX": "50",
@@ -48,7 +48,7 @@
                 "borderRadius": "12"
             },
             {
-                "image": "vaccination-card/vaccine.png",
+                "image": "vaccination-card/vac_entry.png",
                 "width": 150,
                 "posY": "15",
                 "shadowX": "12",
