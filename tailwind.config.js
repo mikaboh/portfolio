@@ -3,6 +3,9 @@ export default {
   theme: {
     extend: {
       fontFamily: { inter: "Inter", plus_jakarta_sans: "Plus Jakarta Sans" },
+      aspectRatio: {
+        '3/4': '3 / 4',
+      },
       colors: {
         "accent": "#7E74F1",
         "textOnDark": "#F1F1F1",
