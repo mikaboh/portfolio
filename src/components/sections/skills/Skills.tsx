@@ -119,7 +119,10 @@ function Skills() {
         <section className="px-96 py-36">
             <HeadlineCentered category="skills" title="Specialized in" />
 
-            <div className="flex flex-row gap-x-20 gap-y-24 justify-center flex-wrap" ref={skillDragConstraintsRef}>
+            <motion.div
+                className="py-10 flex rounded-3xl flex-row gap-x-20 gap-y-24 justify-center flex-wrap" ref={skillDragConstraintsRef}
+                animate={{ backgroundColor: activeDrag ? "#333333" : "inherit" }}
+            >
                 {skills.map((skill) => (
                     <Skill
                         key={skill.name}
@@ -132,7 +135,7 @@ function Skills() {
                         dragControls={skillDragControls}
                     />
                 ))}
-            </div>
+            </motion.div>
         </section>
     );
 }

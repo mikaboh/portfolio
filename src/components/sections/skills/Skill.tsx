@@ -18,13 +18,14 @@ function Skill({ name, icon, activeDrag, startDrag, endDrag, dragControls, const
 
     const hide = {
         opacity: 0,
+        pointerEvents: "none",
     }
 
     function onDragTransitionEnd() {
         setTimeout(() => {
-            endDrag();
-            animate(`#${name}`, { x: 0, y: 0 })
-        }, 500);
+            animate(`#${name}`, { x: 0, y: 0 });
+            endDrag()
+        }, 200);
     }
 
     return (
