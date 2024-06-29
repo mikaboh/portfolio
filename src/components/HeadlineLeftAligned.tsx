@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function HeadlineLeftAligned({ category, title, theme }: HeadlineLeftAlignedProps) {
     let bgColor: string;
 
@@ -13,7 +15,11 @@ function HeadlineLeftAligned({ category, title, theme }: HeadlineLeftAlignedProp
     }
 
     return (
-        <div className="flex flex-col gap-3">
+        <motion.div
+            className="flex flex-col gap-3"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+        >
             <div className="flex flex-row gap-4 items-center">
                 <div className={`h-[2px] w-3.5 ${bgColor}`}></div>
 
@@ -23,7 +29,7 @@ function HeadlineLeftAligned({ category, title, theme }: HeadlineLeftAlignedProp
             {title && (
                 <span className="font-plus_jakarta_sans text-3xl font-bold">{title}</span>
             )}
-        </div>
+        </motion.div>
     );
 }
 

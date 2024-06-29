@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CVItem as CVItemInterface } from "../../../interfaces/CVItem";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 function CVItem({ item, isSubitem = false, isFirst = false, isLast = false }: CVItemProps) {
     return (
@@ -26,7 +27,12 @@ function CVItem({ item, isSubitem = false, isFirst = false, isLast = false }: CV
             </div>
 
             {/* Info */}
-            <div className="flex flex-col gap-4">
+            <motion.div
+                className="flex flex-col gap-4"
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ x: 10 }}
+            >
                 {/* Header */}
                 <div className="flex flex-col gap-2">
                     <span className="text-base font-plus_jakarta_sans">{item.title}</span>
@@ -52,7 +58,7 @@ function CVItem({ item, isSubitem = false, isFirst = false, isLast = false }: CV
                         ))}
                     </div>
                 )}
-            </div>
+            </motion.div>
         </div>
     );
 }
