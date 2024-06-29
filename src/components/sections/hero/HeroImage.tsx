@@ -1,4 +1,3 @@
-import LinesOverHeroImage from "../../assets/LinesOverHeroImage";
 import { motion } from "framer-motion";
 
 function HeroImage() {
