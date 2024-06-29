@@ -4,8 +4,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 function CVItem({ item, isSubitem = false, isFirst = false, isLast = false }: CVItemProps) {
     return (
-        /* TODO: fix subitem not to the left */
-        <div className={`flex flex-row gap-4 ${isSubitem ? "scale-[.8]" : ""}`}>
+        <div className={`flex flex-row gap-4 ${isSubitem ? "scale-[.8] origin-left" : ""}`}>
             <div className="flex flex-col">
                 {isFirst ? (
                     <div className="h-[2px] bg-backgroundDark z-10" />
