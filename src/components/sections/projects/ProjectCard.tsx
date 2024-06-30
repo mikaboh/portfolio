@@ -1,50 +1,14 @@
-import { motion, useAnimationControls } from "framer-motion";
 import HeadlineLeftAligned from "../../HeadlineLeftAligned";
 import MockupScreenComponent from "./MockupScreenComponent";
 import TechnologyBulletPoint from "./TechnologyBulletPoint";
 import TechnologyTag from "./TechnologyTag";
 
 function ProjectCard({ project }: ProjectCardProps) {
-    const mockupAnimationControls = useAnimationControls();
-    const infoAnimationControls = useAnimationControls();
-    const mockupScreenVariants = {
-        rest: {
-            width: '60%',
-        },
-        hover: {
-            width: '100%',
-        },
-    };
-
-    const infoVariants = {
-        rest: {
-            opacity: 1,
-            display: 'flex'
-        },
-        hover: {
-            opacity: 0,
-            display: 'none'
-        },
-    };
-
-    function onMockupHover() {
-        mockupAnimationControls.start('hover');
-        infoAnimationControls.start('hover');
-    }
-
-    function onMockupLeave() {
-        mockupAnimationControls.start('rest');
-        infoAnimationControls.start('rest');
-    }
-
     return (
-        <div className="px-96 py-14 bg-backgroundLight flex flex-row items-center justify-between">
+        <div className="px-96 py-14 bg-backgroundLight flex flex-row items-center justify-between gap-40">
             {/* Info */}
-            <motion.div
+            <div
                 className="flex flex-col gap-12 w-2/5"
-                initial="rest"
-                animate={infoAnimationControls}
-                variants={infoVariants}
             >
                 <HeadlineLeftAligned category="project" title={project.title} theme="light" />
 
@@ -71,22 +35,17 @@ function ProjectCard({ project }: ProjectCardProps) {
                         })}
                     </div>
                 </div>
-            </motion.div>
+            </div>
 
             {/* Mockup Screens */}
             {project.mockupScreens && (
-                <motion.div
-                    className={`justify-center`}
+                <div
+                    className="justify-center w-3/5"
                     style={{
                         display: 'grid',
                         gridTemplateColumns: `repeat(${project.mockupScreens!.length}, 1fr`,
                         gridTemplateRows: '1fr',
                     }}
-                    initial="rest"
-                    onHoverStart={onMockupHover}
-                    onHoverEnd={onMockupLeave}
-                    animate={mockupAnimationControls}
-                    variants={mockupScreenVariants}
                 >
                     {project.mockupScreens!.map((mockupScreen, index) => {
                         return (
@@ -102,7 +61,7 @@ function ProjectCard({ project }: ProjectCardProps) {
                             </div>
                         )
                     })}
-                </motion.div>
+                </div>
             )}
         </div>
     );

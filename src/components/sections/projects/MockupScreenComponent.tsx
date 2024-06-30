@@ -1,17 +1,15 @@
-import { motion, motionValue } from "framer-motion";
+import { motion, motionValue, useAnimationControls } from "framer-motion";
 
 function MockupScreenComponent({ mockupScreen }: MockupScreenComponentProps) {
     const { image, width, shadowX, shadowY, shadowBlur, angle, borderRadius } = mockupScreen;
     const imageVariants = {
         rest: {
-            height: 'auto',
             rotate: angle,
             top: `${mockupScreen.posY}px`,
         },
         hover: {
-            rotate: 0,
-            height: '100%',
-            top: '0',
+            top: `${mockupScreen.posY - 20}px`,
+            scale: 1.1,
         },
     };
 
@@ -25,6 +23,9 @@ function MockupScreenComponent({ mockupScreen }: MockupScreenComponentProps) {
             src={image}
             style={style}
             className="relative"
+            initial="rest"
+            whileHover="hover"
+            animate="rest"
             variants={imageVariants}
         />
     );
