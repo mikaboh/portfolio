@@ -16,6 +16,7 @@ function MockupScreenComponent({ mockupScreen }: MockupScreenComponentProps) {
     const style = {
         borderRadius: `${borderRadius}px`,
         boxShadow: `${shadowX}px ${shadowY}px ${shadowBlur}px rgba(9, 20, 50, 0.15)`,
+        width: `${width}px`,
     };
 
     return (

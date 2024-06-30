@@ -45,13 +45,14 @@ function ProjectCard({ project }: ProjectCardProps) {
                         display: 'grid',
                         gridTemplateColumns: `repeat(${project.mockupScreens!.length}, 1fr`,
                         gridTemplateRows: '1fr',
+                        width: `${project.mockupScreens!.reduce((acc, mockupScreen) => acc + mockupScreen.width, 0)}px`,
                     }}
                 >
                     {project.mockupScreens!.map((mockupScreen, index) => {
                         return (
                             <div
                                 style={{
-                                    zIndex: project.mockupScreens!.length - index
+                                    zIndex: project.mockupScreens!.length - index,
                                 }}
                             >
                                 <MockupScreenComponent
