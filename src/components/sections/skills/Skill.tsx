@@ -1,71 +1,26 @@
 import { animate, motion, useMotionValue } from "framer-motion";
 import { useEffect, useState } from "react";
 
-function Skill({ name, icon, activeDrag, startDrag, endDrag, dragControls, constraintsRef }: SkillProps) {
-    const [isVisible, setIsVisible] = useState(true);
-
-    useEffect(() => {
-        if (activeDrag !== name && activeDrag !== null) {
-            setIsVisible(false)
-        } else {
-            setIsVisible(true)
-        }
-    }, [activeDrag])
-
-    const show = {
-        opacity: 1,
-    }
-
-    const hide = {
-        opacity: 0,
-        pointerEvents: "none",
-    }
-
-    function onDragTransitionEnd() {
-        setTimeout(() => {
-            animate(`#${name}`, { x: 0, y: 0 });
-            endDrag()
-        }, 200);
-    }
-
+function Skill({ name, icon }: SkillProps) {
     return (
-        <motion.div
-            className="flex flex-col items-center w-20 relative hover:cursor-pointer"
-            animate={isVisible ? show : hide}
-        >
+        <div className="flex flex-col items-center w-20 flex-shrink-0 flex-grow-0 whitespace-nowrap gap-y-4">
             <motion.div
                 id={name}
-                drag
                 whileHover={{ scale: 1.3 }}
-                dragConstraints={constraintsRef}
-                dragElastic={0.1}
-                dragControls={dragControls}
-                onPointerDown={startDrag}
-                onDragTransitionEnd={onDragTransitionEnd}
             >
                 {icon}
             </motion.div>
 
-            <motion.div
-                className="text-sm text-opacity-70 text-textOnDark absolute top-[70px] whitespace-nowrap"
-                animate={activeDrag === name ? hide : show}
-            >
-                <span>
-                    {name}
-                </span>
-            </motion.div>
-        </motion.div>
+            <span className="text-sm text-opacity-70 text-textOnDark">
+                {name}
+            </span>
+        </div>
     );
 }
 
 export interface SkillProps {
     name: string;
     icon: JSX.Element;
-    activeDrag: string | null;
-    startDrag: any;
-    endDrag: any;
-    dragControls: any;
-    constraintsRef: any;
 }
 
 export default Skill;

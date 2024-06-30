@@ -19,7 +19,7 @@ import SvelteIcon from "../../assets/SvelteIcon";
 import FirebaseIcon from "../../assets/FirebaseIcon";
 import GoogleCloudIcon from "../../assets/GoogleCloudIcon";
 import MySqlIcon from "../../assets/MySqlIcon";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useDragControls } from "framer-motion";
 
 const skills = [
@@ -102,40 +102,19 @@ const skills = [
 ];
 
 function Skills() {
-    const skillDragConstraintsRef = useRef(null);
-    const skillDragControls = useDragControls();
-    const [activeDrag, setActiveDrag] = useState<string | null>(null);
-
-    function startDrag(event: any, skillName: string) {
-        skillDragControls.start(event);
-        setActiveDrag(skillName);
-    }
-
-    function onDragEnd() {
-        setActiveDrag(null);
-    }
-
     return (
         <section className="px-96 py-36">
             <HeadlineCentered category="skills" title="Specialized in" />
 
-            <motion.div
-                className="py-10 flex rounded-3xl flex-row gap-x-20 gap-y-24 justify-center flex-wrap" ref={skillDragConstraintsRef}
-                animate={{ backgroundColor: activeDrag ? "#333333" : "inherit" }}
-            >
+            <div className="py-10 flex rounded-3xl gap-x-20 gap-y-24 justify-center flex-wrap">
                 {skills.map((skill) => (
                     <Skill
                         key={skill.name}
                         name={skill.name}
                         icon={skill.icon}
-                        activeDrag={activeDrag}
-                        constraintsRef={skillDragConstraintsRef}
-                        startDrag={() => startDrag(event, skill.name)}
-                        endDrag={onDragEnd}
-                        dragControls={skillDragControls}
                     />
                 ))}
-            </motion.div>
+            </div>
         </section>
     );
 }
