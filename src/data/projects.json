@@ -20,42 +20,42 @@
             {
                 "image": "vaccination-card/vac_pass.png",
                 "width": 150,
-                "posY": "-15",
-                "shadowX": "50",
-                "shadowY": "25",
-                "shadowBlur": "120",
+                "posY": -15,
+                "shadowX": 50,
+                "shadowY": 25,
+                "shadowBlur": 120,
                 "angle": -7,
-                "borderRadius": "12"
+                "borderRadius": 12
             },
             {
                 "image": "vaccination-card/calendar.png",
                 "width": 150,
-                "posY": "5",
-                "shadowX": "12",
-                "shadowY": "7",
-                "shadowBlur": "120",
+                "posY": 5,
+                "shadowX": 12,
+                "shadowY": 7,
+                "shadowBlur": 120,
                 "angle": 5,
-                "borderRadius": "12"
+                "borderRadius": 12
             },
             {
                 "image": "vaccination-card/vac_list.png",
                 "width": 150,
-                "posY": "-5",
-                "shadowX": "50",
-                "shadowY": "25",
-                "shadowBlur": "120",
+                "posY": -5,
+                "shadowX": 50,
+                "shadowY": 25,
+                "shadowBlur": 120,
                 "angle": 0,
-                "borderRadius": "12"
+                "borderRadius": 12
             },
             {
                 "image": "vaccination-card/vac_entry.png",
                 "width": 150,
-                "posY": "15",
-                "shadowX": "12",
-                "shadowY": "7",
-                "shadowBlur": "120",
+                "posY": 15,
+                "shadowX": 12,
+                "shadowY": 7,
+                "shadowBlur": 120,
                 "angle": 10,
-                "borderRadius": "12"
+                "borderRadius": 12
             }
         ]
     },
@@ -79,32 +79,32 @@
             {
                 "image": "glucos/calculator.png",
                 "width": 150,
-                "posY": "-4",
-                "shadowX": "50",
-                "shadowY": "17",
-                "shadowBlur": "84",
+                "posY": -4,
+                "shadowX": 50,
+                "shadowY": 17,
+                "shadowBlur": 84,
                 "angle": -8,
-                "borderRadius": "12"
+                "borderRadius": 12
             },
             {
                 "image": "glucos/diary.png",
                 "width": 150,
-                "posY": "20",
-                "shadowX": "8",
-                "shadowY": "5",
-                "shadowBlur": "84",
+                "posY": 20,
+                "shadowX": 8,
+                "shadowY": 5,
+                "shadowBlur": 84,
                 "angle": 0,
-                "borderRadius": "12"
+                "borderRadius": 12
             },
             {
                 "image": "glucos/settings.png",
                 "width": 150,
-                "posY": "-16",
-                "shadowX": "8",
-                "shadowY": "5",
-                "shadowBlur": "84",
+                "posY": -16,
+                "shadowX": 8,
+                "shadowY": 5,
+                "shadowBlur": 84,
                 "angle": 8,
-                "borderRadius": "12"
+                "borderRadius": 12
             }
         ]
     },
@@ -131,12 +131,12 @@
             {
                 "image": "lexi-lens/word-view.png",
                 "width": 600,
-                "posY": "0",
-                "shadowX": "7",
-                "shadowY": "3",
-                "shadowBlur": "12",
+                "posY": 0,
+                "shadowX": 7,
+                "shadowY": 3,
+                "shadowBlur": 12,
                 "angle": 0,
-                "borderRadius": "7"
+                "borderRadius": 7
             }
         ]
     }
