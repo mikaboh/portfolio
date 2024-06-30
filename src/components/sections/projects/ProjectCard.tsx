@@ -1,13 +1,51 @@
+import { motion, useAnimationControls } from "framer-motion";
 import HeadlineLeftAligned from "../../HeadlineLeftAligned";
 import MockupScreenComponent from "./MockupScreenComponent";
 import TechnologyBulletPoint from "./TechnologyBulletPoint";
 import TechnologyTag from "./TechnologyTag";
 
 function ProjectCard({ project }: ProjectCardProps) {
+    const mockupAnimationControls = useAnimationControls();
+    const infoAnimationControls = useAnimationControls();
+    const mockupScreenVariants = {
+        rest: {
+            width: '60%',
+        },
+        hover: {
+            width: '100%',
+        },
+    };
+
+    const infoVariants = {
+        rest: {
+            opacity: 1,
+            display: 'flex'
+        },
+        hover: {
+            opacity: 0,
+            display: 'none'
+        },
+    };
+
+    function onMockupHover() {
+        mockupAnimationControls.start('hover');
+        infoAnimationControls.start('hover');
+    }
+
+    function onMockupLeave() {
+        mockupAnimationControls.start('rest');
+        infoAnimationControls.start('rest');
+    }
+
     return (
         <div className="px-96 py-14 bg-backgroundLight flex flex-row items-center justify-between">
             {/* Info */}
-            <div className="flex flex-col gap-12 w-2/5">
+            <motion.div
+                className="flex flex-col gap-12 w-2/5"
+                initial="rest"
+                animate={infoAnimationControls}
+                variants={infoVariants}
+            >
                 <HeadlineLeftAligned category="project" title={project.title} theme="light" />
 
                 {/* Details */}
@@ -33,16 +71,39 @@ function ProjectCard({ project }: ProjectCardProps) {
                         })}
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Mockup Screens */}
-            <div className={`flex flex-row justify-center w-3/5 ${project.mockupScreenSpacing ? project.mockupScreenSpacing : ""}`}>
-                {project.mockupScreens && project.mockupScreens.map((mockupScreen, index) => {
-                    return (
-                        <MockupScreenComponent key={index} mockupScreen={mockupScreen} zindex={project.mockupScreens!.length - index} />
-                    )
-                })}
-            </div>
+            {project.mockupScreens && (
+                <motion.div
+                    className={`justify-center`}
+                    style={{
+                        display: 'grid',
+                        gridTemplateColumns: `repeat(${project.mockupScreens!.length}, 1fr`,
+                        gridTemplateRows: '1fr',
+                    }}
+                    initial="rest"
+                    onHoverStart={onMockupHover}
+                    onHoverEnd={onMockupLeave}
+                    animate={mockupAnimationControls}
+                    variants={mockupScreenVariants}
+                >
+                    {project.mockupScreens!.map((mockupScreen, index) => {
+                        return (
+                            <div
+                                style={{
+                                    zIndex: project.mockupScreens!.length - index
+                                }}
+                            >
+                                <MockupScreenComponent
+                                    key={index}
+                                    mockupScreen={mockupScreen}
+                                />
+                            </div>
+                        )
+                    })}
+                </motion.div>
+            )}
         </div>
     );
 }

@@ -5,6 +5,6 @@ interface MockupScreen {
     shadowX: string;
     shadowY: string;
     shadowBlur: string;
-    angle: string;
+    angle: number;
     borderRadius: string;
 }

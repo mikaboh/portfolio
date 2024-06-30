@@ -1,24 +1,37 @@
-function MockupScreenComponent({ mockupScreen, zindex }: MockupScreenComponentProps) {
-    const { image, width, shadowX, shadowY, shadowBlur, angle, borderRadius } = mockupScreen;
+import { motion, motionValue } from "framer-motion";
 
-    const style: React.CSSProperties = {
-        width: `${width}px`,
-        height: 'auto',
-        transform: `rotate(${angle}deg)`,
+function MockupScreenComponent({ mockupScreen }: MockupScreenComponentProps) {
+    const { image, width, shadowX, shadowY, shadowBlur, angle, borderRadius } = mockupScreen;
+    const imageVariants = {
+        rest: {
+            height: 'auto',
+            rotate: angle,
+            top: `${mockupScreen.posY}px`,
+        },
+        hover: {
+            rotate: 0,
+            height: '100%',
+            top: '0',
+        },
+    };
+
+    const style = {
         borderRadius: `${borderRadius}px`,
         boxShadow: `${shadowX}px ${shadowY}px ${shadowBlur}px rgba(9, 20, 50, 0.15)`,
-        zIndex: zindex,
-        top: `${mockupScreen.posY}px`,
     };
 
     return (
-        <img src={image} style={style} className="relative" />
+        <motion.img
+            src={image}
+            style={style}
+            className="relative"
+            variants={imageVariants}
+        />
     );
 }
 
 interface MockupScreenComponentProps {
     mockupScreen: MockupScreen;
-    zindex: number;
 }
 
 export default MockupScreenComponent;
