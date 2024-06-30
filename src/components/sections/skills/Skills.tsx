@@ -1,26 +1,24 @@
+import AngularIcon from "../../assets/AngularIcon";
+import CssIcon from "../../assets/CssIcon";
+import DartIcon from "../../assets/DartIcon";
+import DockerIcon from "../../assets/DockerIcon";
+import FigmaIcon from "../../assets/FigmaIcon";
+import FirebaseIcon from "../../assets/FirebaseIcon";
+import FlutterIcon from "../../assets/FlutterIcon";
+import GitIcon from "../../assets/GitIcon";
+import GoogleCloudIcon from "../../assets/GoogleCloudIcon";
+import HtmlIcon from "../../assets/HtmlIcon";
+import JavaIcon from "../../assets/JavaIcon";
+import JavaScriptIcon from "../../assets/JavaScriptIcon";
+import MongoDBIcon from "../../assets/MongoDBIcon";
+import MySqlIcon from "../../assets/MySqlIcon";
+import NodeJsIcon from "../../assets/NodeJsIcon";
+import PythonIcon from "../../assets/PythonIcon";
+import ReactIcon from "../../assets/ReactIcon";
+import SvelteIcon from "../../assets/SvelteIcon";
 import TypeScriptIcon from "../../assets/TypeScriptIcon";
 import HeadlineCentered from "../../HeadlineCentered";
 import Skill from "./Skill";
-import JavaScriptIcon from "../../assets/JavaScriptIcon";
-import ReactIcon from "../../assets/ReactIcon";
-import FlutterIcon from "../../assets/FlutterIcon";
-import DartIcon from "../../assets/DartIcon";
-import FigmaIcon from "../../assets/FigmaIcon";
-import MongoDBIcon from "../../assets/MongoDBIcon";
-import GitIcon from "../../assets/GitIcon";
-import NodeJsIcon from "../../assets/NodeJsIcon";
-import PythonIcon from "../../assets/PythonIcon";
-import JavaIcon from "../../assets/JavaIcon";
-import HtmlIcon from "../../assets/HtmlIcon";
-import CssIcon from "../../assets/CssIcon";
-import DockerIcon from "../../assets/DockerIcon";
-import AngularIcon from "../../assets/AngularIcon";
-import SvelteIcon from "../../assets/SvelteIcon";
-import FirebaseIcon from "../../assets/FirebaseIcon";
-import GoogleCloudIcon from "../../assets/GoogleCloudIcon";
-import MySqlIcon from "../../assets/MySqlIcon";
-import { useEffect, useRef, useState } from "react";
-import { motion, useDragControls } from "framer-motion";
 
 const skills = [
     {
@@ -101,9 +99,9 @@ const skills = [
     },
 ];
 
-function Skills() {
+function Skills({ className }: SkillsProps) {
     return (
-        <section className="px-96 py-36">
+        <section className={`py-36 ${className}`}>
             <HeadlineCentered category="skills" title="Specialized in" />
 
             <div className="py-10 flex rounded-3xl gap-x-20 gap-y-24 justify-center flex-wrap">
@@ -117,6 +115,10 @@ function Skills() {
             </div>
         </section>
     );
+}
+
+interface SkillsProps {
+    className?: string;
 }
 
 export default Skills;

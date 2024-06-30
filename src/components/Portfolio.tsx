@@ -5,19 +5,21 @@ import Projects from "./sections/projects/Projects";
 import Skills from "./sections/skills/Skills";
 
 export default function Portfolio() {
+  const className = "px-8 sm:px-16 md:px-24 lg:px-32 xl:px-40 2xl:px-48 max-w-[1600px] m-auto";
+
   return (
     <main
       className={`text-textOnDark font-inter bg-backgroundDark`}
     >
-      <Hero />
+      <Hero className={`${className}`} />
 
-      <Skills />
+      <Skills className={`${className}`} />
 
-      <Education />
+      <Education className={`${className}`} />
 
       <Projects />
 
-      <Footer />
+      <Footer className={`${className}`} />
     </main>
   );
 }

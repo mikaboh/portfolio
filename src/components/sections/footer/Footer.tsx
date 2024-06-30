@@ -2,9 +2,9 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faAt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Footer() {
+function Footer({ className }: FooterProps) {
     return (
-        <div className="flex flex-col gap-8 items-center py-16 mt-16 text-xs text-textOnDark">
+        <div className={`flex flex-col gap-8 items-center py-16 mt-16 text-xs text-opacity-70 text-textOnDark ${className}`}>
             {/* Header */}
             <div className="flex flex-col gap-5 items-center">
                 {/* Socials */}
@@ -36,9 +36,13 @@ function Footer() {
                 </div>
             </div>
 
-            <span>© 2024  -  Designed by Mika Böhm</span>
+            <span>Designed by Mika Böhm</span>
         </div>
     );
+}
+
+interface FooterProps {
+    className?: string;
 }
 
 export default Footer;

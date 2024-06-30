@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HeadlineLeftAligned from "../../HeadlineLeftAligned";
 import HeroImage from "./HeroImage";
 
-function Hero() {
+function Hero({ className }: HeroProps) {
     return (
-        <section className="px-96 py-36 flex flex-row items-center justify-between">
+        <section className={`gap-20 py-36 flex flex-row items-center justify-between ${className}`}>
             {/* HeroInfo */}
-            <div className="flex flex-col gap-5 max-w-2xl">
+            <div className="flex flex-col gap-5 max-w-[50%]">
                 {/* HeroHeader */}
                 <div className="flex flex-col gap-3">
                     <HeadlineLeftAligned category="my name is" />
@@ -45,6 +45,10 @@ function Hero() {
             <HeroImage />
         </section>
     );
+}
+
+interface HeroProps {
+    className?: string;
 }
 
 export default Hero;

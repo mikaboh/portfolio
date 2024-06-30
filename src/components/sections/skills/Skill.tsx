@@ -7,6 +7,8 @@ function Skill({ name, icon }: SkillProps) {
             <motion.div
                 id={name}
                 whileHover={{ scale: 1.3 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
             >
                 {icon}
             </motion.div>

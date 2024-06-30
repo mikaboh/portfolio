@@ -5,7 +5,7 @@ import TechnologyTag from "./TechnologyTag";
 
 function ProjectCard({ project }: ProjectCardProps) {
     return (
-        <div className="px-96 py-14 bg-backgroundLight flex flex-row items-center justify-between gap-40">
+        <div className="py-14 bg-backgroundLight flex flex-row items-center justify-between gap-40">
             {/* Info */}
             <div
                 className="flex flex-col gap-12 w-2/5"
