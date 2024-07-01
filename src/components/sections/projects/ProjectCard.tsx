@@ -51,12 +51,12 @@ function ProjectCard({ project }: ProjectCardProps) {
                     {project.mockupScreens!.map((mockupScreen, index) => {
                         return (
                             <div
+                                key={index}
                                 style={{
                                     zIndex: project.mockupScreens!.length - index,
                                 }}
                             >
                                 <MockupScreenComponent
-                                    key={index}
                                     mockupScreen={mockupScreen}
                                 />
                             </div>
