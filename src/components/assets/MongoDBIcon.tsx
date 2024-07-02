@@ -1,7 +1,7 @@
 function MongoDBIcon() {
     return (
-        <svg width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_2_131)">
+        <svg className="w-full" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0_2_131)">
                 <mask id="mask0_2_131" maskUnits="userSpaceOnUse" x="15" y="-1" width="27" height="58">
                     <path d="M41.5856 -0.027832H15.2029V56.6949H41.5856V-0.027832Z" fill="white" />
                 </mask>

@@ -1,7 +1,7 @@
 function HtmlIcon() {
     return (
-        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_2_424)">
+        <svg className="w-full" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0_2_424)">
                 <path d="M7.8669 51.5867L3.31476 0.532959H53.3316L48.7759 51.5797L28.2912 57.2556L7.8669 51.5867Z" fill="#E44D26" />
                 <path d="M44.8743 48.3286L48.7688 4.70752H28.3232V52.918L44.8743 48.3286Z" fill="#F16529" />
                 <path d="M28.3018 10.9684H12.6211L14.3104 29.9037H28.3231V23.6428H20.0378L19.4652 17.2311H28.3231V10.9684H28.3018ZM28.3231 39.8837L28.2965 39.8908L21.323 38.0082L20.8798 33.0147H14.5905L15.4679 42.8458L28.2948 46.391L28.3231 46.3822V39.8837Z" fill="#EBEBEB" />

@@ -5,9 +5,9 @@ import HeroImage from "./HeroImage";
 
 function Hero({ className }: HeroProps) {
     return (
-        <section className={`gap-20 py-36 flex flex-row items-center justify-between ${className}`}>
+        <section className={`gap-24 flex flex-col-reverse items-center justify-center flex-wrap lg:flex-row lg:justify-between lg:flex-nowrap ${className}`}>
             {/* HeroInfo */}
-            <div className="flex flex-col gap-5 max-w-[50%]">
+            <div className="flex flex-col gap-5 lg:w-1/2 xl:w-2/3 2xl:w-1/2">
                 {/* HeroHeader */}
                 <div className="flex flex-col gap-3">
                     <HeadlineLeftAligned category="my name is" />

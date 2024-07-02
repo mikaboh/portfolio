@@ -1,7 +1,7 @@
 function NodeJsIcon() {
     return (
-        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_2_124)">
+        <svg className="w-full" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0_2_124)">
                 <mask id="mask0_2_124" maskUnits="userSpaceOnUse" x="3" y="0" width="51" height="58">
                     <path d="M53.1144 0.577515H3.19841V57.3002H53.1144V0.577515Z" fill="white" />
                 </mask>

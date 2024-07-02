@@ -5,7 +5,7 @@ import educationData from "../../../data/education.json";
 
 function Education({ className }: EducationProps) {
     return (
-        <section className={`py-36 flex flex-col gap-10 ${className}`}>
+        <section className={`flex flex-col gap-10 ${className}`}>
             <HeadlineLeftAligned category="learning path" title="Education & Work Experience" />
 
             <div className="flex flex-col gap-10 relative">
