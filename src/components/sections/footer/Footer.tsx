@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer({ className }: FooterProps) {
     return (
-        <div className={`flex flex-col gap-8 items-center py-16 mt-16 text-xs text-opacity-70 text-textOnDark ${className}`}>
+        <div className={`flex flex-col gap-8 items-center text-xs text-opacity-70 text-textOnDark ${className}`}>
             {/* Header */}
             <div className="flex flex-col gap-5 items-center">
                 {/* Socials */}

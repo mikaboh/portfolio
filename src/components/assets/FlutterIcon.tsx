@@ -1,6 +1,6 @@
 function FlutterIcon() {
     return (
-        <svg width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2_273)">
                 <mask id="mask0_2_273" maskUnits="userSpaceOnUse" x="5" y="-1" width="47" height="58">
                     <path d="M51.3899 25.9594L36.1212 41.2336L51.3899 56.5078H33.9423L18.668 41.2336L33.9423 25.9594H51.3899ZM33.9423 -0.214844L5.58365 28.1438L14.3102 36.8703L51.3899 -0.214844H33.9423Z" fill="white" />

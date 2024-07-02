@@ -86,11 +86,11 @@ const skills = [
         icon: <SvelteIcon />,
     },
     {
-        name: "Google Firebase",
+        name: "Firebase",
         icon: <FirebaseIcon />,
     },
     {
-        name: "Google Cloud Platform",
+        name: "GCP",
         icon: <GoogleCloudIcon />,
     },
     {
@@ -101,7 +101,7 @@ const skills = [
 
 function Skills({ className }: SkillsProps) {
     return (
-        <section className={`py-36 ${className}`}>
+        <section className={`${className}`}>
             <HeadlineCentered category="skills" title="Specialized in" />
 
             <div className="py-10 flex rounded-3xl gap-x-20 gap-y-24 justify-center flex-wrap">

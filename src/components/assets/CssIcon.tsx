@@ -1,6 +1,6 @@
 function CssIcon() {
     return (
-        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2_439)">
                 <path d="M54.2898 0.532959L49.7333 51.5775L29.2516 57.2556L8.82626 51.5855L4.27457 0.532959H54.2898Z" fill="#264DE4" />
                 <path d="M29.2822 52.9154L45.8324 48.327L49.7262 4.70715H29.2822V52.9154Z" fill="#2965F1" />

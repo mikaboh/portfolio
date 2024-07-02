@@ -4,11 +4,13 @@ import TechnologyBulletPoint from "./TechnologyBulletPoint";
 import TechnologyTag from "./TechnologyTag";
 
 function ProjectCard({ project }: ProjectCardProps) {
+    const mockupScreensWidth = project.mockupScreens!.reduce((acc, mockupScreen) => acc + mockupScreen.width, 0);
+
     return (
-        <div className="py-14 bg-backgroundLight flex flex-row items-center justify-between gap-40">
+        <div className="py-14 bg-backgroundLight flex flex-col items-center justify-between gap-20 xl:flex-row">
             {/* Info */}
             <div
-                className="flex flex-col gap-12 w-2/5"
+                className="flex flex-col gap-12 xl:w-3/5 2xl:w-2/5"
             >
                 <HeadlineLeftAligned category="project" title={project.title} theme="light" />
 
@@ -40,12 +42,11 @@ function ProjectCard({ project }: ProjectCardProps) {
             {/* Mockup Screens */}
             {project.mockupScreens && (
                 <div
-                    className="justify-center w-3/5"
+                    className={`justify-center xl:w-[${mockupScreensWidth}px]`}
                     style={{
                         display: 'grid',
                         gridTemplateColumns: `repeat(${project.mockupScreens!.length}, 1fr`,
                         gridTemplateRows: '1fr',
-                        width: `${project.mockupScreens!.reduce((acc, mockupScreen) => acc + mockupScreen.width, 0)}px`,
                     }}
                 >
                     {project.mockupScreens!.map((mockupScreen, index) => {

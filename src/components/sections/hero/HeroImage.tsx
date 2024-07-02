@@ -20,7 +20,7 @@ function HeroImage() {
 
     return (
         <motion.div
-            className="relative overflow-visible aspect-3/4 max-h-[350px]"
+            className="relative overflow-visible aspect-3/4 max-h-[300px] lg:max-h-[350px]"
             initial="rest"
             whileHover="hover"
             animate="rest"

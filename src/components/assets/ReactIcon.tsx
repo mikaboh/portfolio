@@ -1,6 +1,6 @@
 function ReactIcon() {
     return (
-        <svg width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2_115)">
                 <mask id="mask0_2_115" maskUnits="userSpaceOnUse" x="0" y="2" width="58" height="53">
                     <path d="M57.4375 2.24158H0.714779V54.2374H57.4375V2.24158Z" fill="white" />

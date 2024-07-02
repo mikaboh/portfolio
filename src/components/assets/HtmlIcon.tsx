@@ -1,6 +1,6 @@
 function HtmlIcon() {
     return (
-        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2_424)">
                 <path d="M7.8669 51.5867L3.31476 0.532959H53.3316L48.7759 51.5797L28.2912 57.2556L7.8669 51.5867Z" fill="#E44D26" />
                 <path d="M44.8743 48.3286L48.7688 4.70752H28.3232V52.918L44.8743 48.3286Z" fill="#F16529" />

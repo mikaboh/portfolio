@@ -1,6 +1,6 @@
 function AngularIcon() {
     return (
-        <svg width="57" height="58" viewBox="0 0 57 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full" viewBox="0 0 57 58" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2_577)">
                 <path d="M1.57056 10.4948L27.9679 1.1001L55.0601 10.3494L50.6818 45.2587L27.9679 57.8228L5.62268 45.4218L1.57056 10.4948Z" fill="#E23237" />
                 <path d="M55.06 10.3494L27.9678 1.1001V57.8228L50.6817 45.2587L55.06 10.3494Z" fill="#B52E31" />

@@ -1,6 +1,6 @@
 function FirebaseIcon() {
     return (
-        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2_601)">
                 <path d="M36.0185 20.7607L30.3429 26.0412L25.0765 15.4181L27.8018 9.30829C28.5106 8.06789 29.6163 8.08207 30.3074 9.30829L36.0185 20.7607Z" fill="#FFA000" />
                 <path d="M25.0765 15.4178L30.3428 26.0409L9.1321 45.772L25.0765 15.4178Z" fill="#F57F17" />

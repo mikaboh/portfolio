@@ -1,6 +1,6 @@
 function TypeScriptIcon() {
     return (
-        <svg width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2_81)">
                 <mask id="mask0_2_81" maskUnits="userSpaceOnUse" x="1" y="-1" width="56" height="58">
                     <path d="M56.9194 -0.027832H1.06941V56.6949H56.9194V-0.027832Z" fill="white" />

@@ -1,6 +1,6 @@
 function FigmaIcon() {
     return (
-        <svg width="58" height="57" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-full" viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2_71)">
                 <mask id="mask0_2_71" maskUnits="userSpaceOnUse" x="9" y="-1" width="39" height="58">
                     <path d="M47.5606 -0.027832H9.74548V56.6949H47.5606V-0.027832Z" fill="white" />
