@@ -139,5 +139,33 @@
                 "borderRadius": 7
             }
         ]
+    },
+    {
+        "title": "Portfolio",
+        "technologies": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Figma",
+            "Google Firebase"
+        ],
+        "description": [
+            "Portfolio website showcasing a collection of software projects and skills.",
+            "Designed with Figma.",
+            "Developed using Next.js and React with TypeScript.",
+            "Hosted on Google Firebase."
+        ],
+        "mockupScreens": [
+            {
+                "image": "portfolio/portfolio.png",
+                "width": 600,
+                "posY": 0,
+                "shadowX": 7,
+                "shadowY": 3,
+                "shadowBlur": 12,
+                "angle": 0,
+                "borderRadius": 7
+            }
+        ]
     }
 ]
