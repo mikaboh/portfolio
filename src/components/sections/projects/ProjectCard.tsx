@@ -45,7 +45,7 @@ function ProjectCard({ project }: ProjectCardProps) {
                     className={`justify-center xl:w-[${mockupScreensWidth}px]`}
                     style={{
                         display: 'grid',
-                        gridTemplateColumns: `repeat(${project.mockupScreens!.length}, 1fr`,
+                        gridTemplateColumns: `repeat(${project.mockupScreens!.length}, 1fr)`,
                         gridTemplateRows: '1fr',
                     }}
                 >

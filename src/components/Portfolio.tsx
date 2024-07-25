@@ -1,3 +1,5 @@
+'use client'
+
 import Education from "./sections/education/Education";
 import Footer from "./sections/footer/Footer";
 import Hero from "./sections/hero/Hero";
