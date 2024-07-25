@@ -1,0 +1,171 @@
+[
+    {
+        "title": "Vaccination Card",
+        "technologies": [
+            "Flutter",
+            "Hyperledger Fabric Blockchain",
+            "Dart",
+            "Figma",
+            "Node.js",
+            "Express"
+        ],
+        "description": [
+            "Secure storage of vaccine details and vaccination records.",
+            "Real-time updates of each patient's vaccination status on a decentralized ledger.",
+            "Mobile application developed in Flutter and Dart for easy access to vaccination history and schedules.",
+            "Node.js and Express server layer for efficient communication between the mobile app and the blockchain."
+        ],
+        "mockupScreenSpacing": 15,
+        "mockupScreens": [
+            {
+                "image": "vaccination-card/vac_pass.png",
+                "width": 150,
+                "posY": -15,
+                "shadowX": 50,
+                "shadowY": 25,
+                "shadowBlur": 120,
+                "angle": -7,
+                "borderRadius": 12
+            },
+            {
+                "image": "vaccination-card/calendar.png",
+                "width": 150,
+                "posY": 5,
+                "shadowX": 12,
+                "shadowY": 7,
+                "shadowBlur": 120,
+                "angle": 5,
+                "borderRadius": 12
+            },
+            {
+                "image": "vaccination-card/vac_list.png",
+                "width": 150,
+                "posY": -5,
+                "shadowX": 50,
+                "shadowY": 25,
+                "shadowBlur": 120,
+                "angle": 0,
+                "borderRadius": 12
+            },
+            {
+                "image": "vaccination-card/vac_entry.png",
+                "width": 150,
+                "posY": 15,
+                "shadowX": 12,
+                "shadowY": 7,
+                "shadowBlur": 120,
+                "angle": 10,
+                "borderRadius": 12
+            }
+        ]
+    },
+    {
+        "title": "Glucos",
+        "technologies": [
+            "Flutter",
+            "Dart",
+            "Figma"
+        ],
+        "description": [
+            "Smartphone application developed using Flutter and Dart.",
+            "Insulin dosage calculator, enabling diabetic users to input their current blood sugar levels and carbohydrate intake.",
+            "The app calculates the necessary insulin dosage based on user inputs to assist in diabetes management.",
+            "A diary feature to save and review past calculations and insulin dosages.",
+            "Options to switch between different units for measuring carbohydrates and blood sugar.",
+            "Features a dark mode."
+        ],
+        "mockupScreenSpacing": 5,
+        "mockupScreens": [
+            {
+                "image": "glucos/calculator.png",
+                "width": 150,
+                "posY": -4,
+                "shadowX": 50,
+                "shadowY": 17,
+                "shadowBlur": 84,
+                "angle": -8,
+                "borderRadius": 12
+            },
+            {
+                "image": "glucos/diary.png",
+                "width": 150,
+                "posY": 20,
+                "shadowX": 8,
+                "shadowY": 5,
+                "shadowBlur": 84,
+                "angle": 0,
+                "borderRadius": 12
+            },
+            {
+                "image": "glucos/settings.png",
+                "width": 150,
+                "posY": -16,
+                "shadowX": 8,
+                "shadowY": 5,
+                "shadowBlur": 84,
+                "angle": 8,
+                "borderRadius": 12
+            }
+        ]
+    },
+    {
+        "title": "LexiLens",
+        "technologies": [
+            "React",
+            "Plasmo",
+            "Microsoft Azure Translate",
+            "TypeScript",
+            "Figma",
+            "Google Firebase",
+            "Google Cloud NLP"
+        ],
+        "description": [
+            "Browser extension targeted at English speakers who are learning German.",
+            "Developed using the Plasmo framework and React with TypeScript.",
+            "Operates on Google Firebase, handling backend functionalities such as data storage and processing.",
+            "Highlights every word on a webpage in one of three colors: red for unknown vocabulary, yellow for vocabulary previously encountered, and green for vocabulary the user already knows.",
+            "Helps users easily identify and learn new German words and their usage in context.",
+            "Integrates Google Cloud NLP for syntactic analysis, Microsoft Azure Translate for translations, and a Dictionary API for definitions."
+        ],
+        "mockupScreens": [
+            {
+                "image": "lexi-lens/word-view.png",
+                "width": 600,
+                "posY": 0,
+                "shadowX": 7,
+                "shadowY": 3,
+                "shadowBlur": 12,
+                "angle": 0,
+                "borderRadius": 7
+            }
+        ]
+    },
+    {
+        "title": "Portfolio",
+        "technologies": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Figma",
+            "Google Firebase"
+        ],
+        "description": [
+            "Portfolio website showcasing a collection of software projects and skills.",
+            "Designed with Figma.",
+            "Developed using Next.js and React with TypeScript.",
+            "Hosted on Google Firebase."
+        ],
+        "mockupScreens": [
+            {
+                "image": "portfolio/portfolio.png",
+                "width": 600,
+                "posY": 0,
+                "shadowX": 7,
+                "shadowY": 3,
+                "shadowBlur": 12,
+                "angle": 0,
+                "borderRadius": 7
+            }
+        ]
+    }
+]
